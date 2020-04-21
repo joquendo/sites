@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>James Oquendo</title>
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <header role="banner">
+            <h1><a href="/">James Oquendo</a></h1>
+            <nav role="navigation">
+                <ul>
+                <li><a href="/recipes/">Recipes</a></li>
+                <li><a href="/projects/">Web Work</a></li>
+                <li><a href="/about/">About Me</a></li>
+                <li><a href="https://www.linkedin.com/in/jamesoquendo/">My LinkedIn Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="container"></div>
+
+        <script type="text/babel">
+            var HelloWorld = React.createClass({
+                render: function() {
+                    return(
+                        <p>Hello, {this.props.greetTarget}!</p>
+                    )
+                }
+            });
+
+            var Buttonify = React.createClass({
+                render: function() {
+                    return(
+                        <button type={this.props.behavior}>{this.props.children}</button>
+                    )
+                }
+            })
+            ReactDOM.render(
+                <div>
+                    <HelloWorld greetTarget="World"/>
+                </div>,
+                    document.querySelector('#container')
+            )
+        </script>
+        <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    </body>
+</html>

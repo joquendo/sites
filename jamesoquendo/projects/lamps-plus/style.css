@@ -1,0 +1,129 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+
+body {
+	margin: 0;
+	padding:0;
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+header span {
+	display:block;
+}
+h2 {
+	margin-right: 10px;
+	font-weight: 600;
+}
+h3 {
+	margin-top:0;
+}
+p, li {
+	font-weight:300;
+}
+#container {
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+
+	display: flex;
+	flex-direction: column;
+
+	-webkit-flex-flow: column;
+}
+.flex > section {
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 auto;
+	-webkit-transition: width 0.7s ease-out;
+  transition: width 0.7s ease-out;
+}
+.divider {
+	-webkit-flex: 0 0 1px;
+	flex: 0 0 1px;
+	width:1px;
+	background-color:#ccc;
+}
+section {
+	width: auto;
+	padding: 15px;
+	padding-bottom: 0px;
+}
+section.zone1 {
+	background: -webkit-linear-gradient( rgba(0,0,0,0.3), rgba(255,255,255,0.3) ); /* Safari 5.1 to 6.0 */
+	background: -o-linear-gradient( rgba(0,0,0,0.3), rgba(255,255,255,0.3) ); /* Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient( rgba(0,0,0,0.3), rgba(255,255,255,0.3) ); /* Firefox 3.6 to 15 */
+	background: linear-gradient(rgba(0,0,0,0.3), rgba(255,255,255,0.3)); /* Standard syntax */
+}
+.mask{
+	overflow:hidden;
+	height:280px;
+	margin:20px -15px 0;
+	text-align:center;
+}
+.mask img {
+	width:100%;
+	max-width:640px;
+}
+ul#grocery-list {
+	max-width:100%;
+	list-style-type:none;
+	padding:0;
+}
+ul#grocery-list li {
+	list-style:none;
+	display:block;
+	background:rgba(255,255,255,0.5);
+	border-bottom:1px solid #ccc;
+	padding:10px;
+}
+ul#grocery-list li:hover {
+	background: rgba(255,255,255,1);
+}
+ul#grocery-list li:before {
+	content: "\203A  ";
+	font-size: 1.4rem;
+}
+button {
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-size: 0.825rem;
+  padding: 0.2rem 1.1rem;
+  text-decoration: none;
+  background: #fff;
+  cursor:pointer;
+}
+
+button:hover {
+  text-decoration: none;
+  background: #ddd;
+}
+
+footer {
+	padding: 10px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #000;
+	font-size:smaller;
+}
+
+/* width greater than 414px */
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+@media screen and (min-width: 415px) {
+	#container {
+		-webkit-flex-flow: row;
+		flex-direction:row;
+	}
+	section {
+		width: 50%;
+	}
+	p, li {
+		font-weight:400;
+		font-size:1rem;
+	}
+	.mask {
+		display:none;
+	}
+}

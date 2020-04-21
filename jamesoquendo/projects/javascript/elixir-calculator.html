@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Clash of Clans: Elixir Calculator | Software Engineer | James Oquendo</title>
+  <meta char="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/main.css" type="text/css" />
+  <link rel="stylesheet" href="../css/elixir-calculator.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="files/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <header role="banner">
+    <h1>James Oquendo</h1>
+    <nav role="navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../experiments.html">Experiments</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <article>
+    <h1>Clash of Clans: Elixir Calculator</h1>
+    <p>Clash of Clans is one of my favorite games right now so I created this adding module to
+  see how much elixir is spent versus how much is gained.</p>
+    <p>Elixir Gained:<input type="number" id="elixir-gained" name="elixir-gained" min="0" max="1000000" onchange="updateTotal(this.name)">
+</p>
+    <p>Troops used in battle:</p>
+    <ul id="troops">
+      <li><a onclick="updateTotal(this.name)"><img width="100" height="100" src="../images/100_barbarian.gif"></a><br/><button type="button">-</button>Barbarian<button type="button" onclick="updateTotal(this.name)" name="barbarian">+</button><br/><input type="number" id="barbarians" name="barbarians" min="0" max="250" onchange="updateTotal(this.name)"><br/>Level <input type="number" min="0" max="6" /></li>
+      <li><a href="">Archer</a><br/><img width="100" height="100" src="../images/100_archer.gif"><input type="number" id="archers" name="archers" min="0" max="250" onchange="updateTotal(this.name)"> Level: <input type="number" min="0" max="6" /></li>
+      <li><a href="">Goblin</a><br/><img width="100" height="100" src="../images/100_goblin.gif"><input type="number" id="goblins" name="goblins" min="0" max="250" onchange="updateTotal(this.name)"> Level: <input type="number" min="0" max="6" /></li>
+      <li><a href="">Giant</a> <input type="number" id="giants" name="giants" min="0" max="250" onchange="updateTotal(this.name)"> Level: <input type="number" min="0" max="6" /></li>
+      <li><a href="">Wall Breaker</a> <input type="number" id="wbs" name="wbs" min="0" max="250" onchange="updateTotal(this.name)"> Level: <input type="number" min="0" max="6" /></li>
+      <li><a href="">Balloon</a> <input type="number" id="balloons" name="balloons" min="0" max="250" onchange="updateTotal(this.name)"> Level: <input type="number" min="0" max="6" /></li>
+      <li><a href="">Wizard</a> <input type="number" id="wizards" name="wizards" min="0" max="250" onchange="updateTotal(this.name)"> Level: <input type="number" min="0" max="6" /></li>
+      <li><a href="">Healer</a> <input type="number" id="healers" name="healers" min="0" max="250" onchange="updateTotal(this.name)"> Level: <input type="number" min="0" max="6" /></li>
+    </ul>
+    
+    <p>Spells used:</p>
+    <ul id="">
+      <li><a href="">Lightning Spell</a> <input type="number" id="lightning" name="lightning" min="0" max="5" onchange="updateTotal(this.name)"> Level: <input type="number" min="0" max="6" /></li>
+      <li><a href="">Healing Spell</a> <input type="number" id="healing" name="healing" min="0" max="5" onchange="updateTotal(this.name)"> Level: <input type="number" min="0" max="6" /></li>
+      <li><a href="">Rage Spell</a> <input type="number" id="rage" name="rage" min="0" max="5" onchange="updateTotal(this.name)"> Level: <input type="number" min="0" max="6" /></li>
+    </ul>
+    <!-- <form action=""> -->
+      <h3 id="elixir-gained-display"></h3>
+      <h3 id="elixirSpent"></h3> 
+    <!-- </form> -->
+    <hr>
+    <h3 id="totalElixir"></h3>
+  </article>
+  
+  <footer role="contentinfo">
+    <p>&copy; 2014 James Oquendo
+    <nav role="navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+		<li><a href="../about.html">About</a></li>
+		<li><a href="../experiments.html">Experiments</a>
+		<li><a href="../contact.html">Contact</a></li>
+	  </ul>
+	</nav>
+    </p>
+  </footer>
+  
+  <!-- JS load -->
+  <script src="js/elixir-calculator.js"></script>
+</body>
+</html>
