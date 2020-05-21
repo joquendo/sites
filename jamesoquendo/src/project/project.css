@@ -1,0 +1,12 @@
+.technology {
+  margin: 15px -1.25rem;
+  padding: 5px 15px;
+}
+
+.technology .card-text {
+  font-size: small;
+  font-weight: 500;
+}
+.card-body .card-text {
+  font-size: 1rem;
+}
