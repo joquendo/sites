@@ -16,7 +16,7 @@ const Project = (props) => {
               <small>Technology</small>
               <p className="card-text">{project.technology}</p>
             </div>
-            <a href={project.url} target="_view" className="btn btn-primary">View</a>
+            <a href={project.url} target="_blank" rel="noopener noreferrer" className="btn btn-primary">View</a>
           </div>
       </div>
     </div>
