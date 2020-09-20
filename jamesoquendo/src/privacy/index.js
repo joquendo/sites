@@ -5,7 +5,7 @@ const PrivacyPolicyPage = () => {
   return(
     <section className="container">
       <h1 className="h3">Privacy Policy</h1>
-      <h5>For Facebook log in of the <a href="https://jamesyoutubeparty.herokuapp.com/">YouTube Party</a>.</h5>
+      <h5>For Facebook log in of the <a href="https://jamesyoutubeparty.herokuapp.com/">YouTube Party Room web app</a>.</h5>
       <p>Last updated: May 21, 2020</p>
       <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
       <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.termsfeed.com/privacy-policy-generator/" target="_blank" rel="noopener noreferrer">Privacy Policy Generator</a>.</p>
@@ -154,10 +154,11 @@ const PrivacyPolicyPage = () => {
 <p>We may update our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
 <p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the &quot;Last updated&quot; date at the top of this Privacy Policy.</p>
 <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
-<h1>Contact Us</h1>
-<p>If you have any questions about this Privacy Policy, You can contact us:</p>
+<h1>Contact</h1>
+<p>If you have any questions about this Privacy Policy, You can contact me:</p>
 <ul>
-<li>By email: james4public@gmail.com</li>
+  <li>By email: james4public@gmail.com</li>
+  <li>LinkedIn: <a href="https://www.linkedin.com/in/jamesoquendo/">Linked in profile</a></li>
 </ul>
     </section>
   );
