@@ -1,0 +1,21 @@
+footer {
+  background-color: rgb(230, 227, 227);
+  margin-top: 50px;
+  padding: 20px;
+}
+footer a {
+  margin: auto 10px;
+ }
+ .social {
+   margin: 10px auto;
+   text-align: center;
+ }
+ .copyright {
+  font-size: smaller;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+footer .me {
+  margin-bottom: 10px;
+}
