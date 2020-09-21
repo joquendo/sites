@@ -1,0 +1,10 @@
+#featured { 
+  padding: 10px 9px;
+  margin: 15px -15px 15px;
+}
+#featured img {
+  max-width: 100%;
+  width: 900px;
+  margin: 0 auto;
+  display: block;
+}
