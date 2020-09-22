@@ -3,40 +3,29 @@
   src: url('../fonts/Suranna-Regular.ttf');
   font-variation-settings: 'wdth' 400, 'wght' 98;
 }
-
 .logo {
   height: 150px;
 }
-
 .title{
   font-family: 'Suranna, Times, serif';
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: regular;
   color: #000;
   letter-spacing: .02rem;
 }
-
 .title a {
   color: #9cd0fa;
   text-decoration: none;
 }
-
 .title a:hover {
   color: #9af;
   text-decoration: none;
 }
-
 .subtitle {
   font-style: italic;
   font-size: large;
   color: rgb(14, 56, 134);
 }
-
-.featuredHouse {
-  border-radius: 2px;
-  background-color: rgb(255, 190, 166);
-}
-
 .navbar a {
   color: #111111;
   text-decoration: none;

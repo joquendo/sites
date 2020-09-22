@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Project from '../project';
-import FeaturedProject from '../components/featured/featured';
 
 class ProjectsPage extends Component {
   state = {
@@ -26,15 +25,11 @@ class ProjectsPage extends Component {
   getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
-
   render() {
     return (
-      <div className="container">
-        <header>
-          <FeaturedProject project={this.state.projects[this.state.featured]} />
-        </header>
+      <div className="container-fluid">
         <section>
-          <div className="container-fluid">
+          <div>
             <h1 className="h3">Projects</h1>
             <div className="projects-list">
               <div className="row">
@@ -44,7 +39,6 @@ class ProjectsPage extends Component {
           </div>
         </section>
       </div>
-
     )
   }
 }

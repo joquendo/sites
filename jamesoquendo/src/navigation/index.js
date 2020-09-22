@@ -10,16 +10,17 @@ import PrivacyPage from '../privacy';
 const Navigation = () => {
   return (
     <Router>
-      <Navbar expand="sm" className="justify-content-center">
+      <Navbar expand="sm">
         <Navbar.Brand href="/" className="mx-auto">James Oquendo</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse className="justify-content-flex-start ml-5">
+        <Navbar.Collapse className="text-center ml-sm-5">
           <Nav>
             <Nav.Link href="/projects">Projects</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
          </Nav>
         </Navbar.Collapse>
       </Navbar>
+
       <Route exact path="/" component={ProjectsPage} />
       <Route path="/projects" component={ProjectsPage} />
       <Route path="/about" component={AboutPage} />
