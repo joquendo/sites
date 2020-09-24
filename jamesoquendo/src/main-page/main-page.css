@@ -37,3 +37,8 @@
 .navbar a.active {
   color: #9cd0fa;
 }
+.main {
+  /* TODO: add mixin for bootstrap container-fluid */
+  margin: 0 auto;
+  padding: 15px;
+}

@@ -27,18 +27,16 @@ class ProjectsPage extends Component {
   }
   render() {
     return (
-      <div className="container-fluid">
-        <section>
-          <div>
-            <h1 className="h3">Projects</h1>
-            <div className="projects-list">
-              <div className="row">
-                {this.state.projects.map((project) => <Project key={project.id} project={project} />)}
-              </div>
+      <section className="main">
+        <div id="projects">
+          <h1 className="h3">Projects</h1>
+          <div className="projects-list">
+            <div className="row">
+              {this.state.projects.map((project) => <Project key={project.id} project={project} />)}
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     )
   }
 }
