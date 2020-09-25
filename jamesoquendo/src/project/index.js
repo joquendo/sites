@@ -6,7 +6,7 @@ const Project = (props) => {
   const project = props.project;
 
   return (
-    <div className="col-md-6 mb-2">
+    <div className="col-md-6 col-xl-4 mb-2">
       <div key={project.key} className="card">
         <a href={project.url} target="_blank" rel="noopener noreferrer">
           <img className="card-img-top" src={project.image} alt={project.title} />
