@@ -7,7 +7,7 @@ import GitHubLogo from '../../images/logo-github.svg'
 const Footer = () => {
   return ( 
     <footer>
-      <div className="d-flex flex-row justify-content-center me">James Oquendo</div>
+      <div className="d-flex flex-row justify-content-center me"></div>
       <div className="d-flex flex-row justify-content-center">
         <a href="/projects">Projects</a>
         <a href="/about">About</a>
@@ -18,7 +18,7 @@ const Footer = () => {
         <a href="https://www.github.com/joquendo/"><img src={GitHubLogo}/></a>
         <a href="https://www.instagram.com/jimmyjams22/"><img src={InstagramLogo} /></a>
       </div>
-      <p className="copyright">&copy; 2020 All rights reserved.</p>
+      <p className="copyright">&copy;2020 James Oquendo</p>
     </footer>
    );
 }
