@@ -40,5 +40,5 @@
 .main {
   /* TODO: add mixin for bootstrap container-fluid */
   margin: 0 auto;
-  padding: 15px;
+  padding: 0 15px;
 }

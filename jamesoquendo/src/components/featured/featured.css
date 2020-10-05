@@ -1,10 +1,12 @@
-#featured { 
-  padding: 10px 9px;
-  margin: 15px -15px 15px;
+#featured {
+  background-color: rgb(4, 5, 5);
+  border-bottom: 1px solid rgb(4,5,5);
+  color: #fff;
+  height: 300px;
+  margin:  0 auto 20px;
+  overflow: hidden;
 }
-#featured img {
-  max-width: 100%;
-  width: 900px;
-  margin: 0 auto;
-  display: block;
+
+#featured .smaller {
+  font-size: smaller;
 }
