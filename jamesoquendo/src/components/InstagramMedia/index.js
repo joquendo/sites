@@ -12,10 +12,10 @@ function InstagramMedia() {
   const getInstagramMedia = () => {
     setLoading(true);
     fetch(`${IG_API_URL}?fields=${IG_MEDIA_FIELDS}&access_token=${IG_ACCESS_TOKEN}`)
-      .then(response => {
+      .then(response => response.json())
+      .then(({data}) => {
         setLoading(false);
-        setMediaList(response);
-        console.log(response);
+        setMediaList(data);
       })
       .catch(err => {
         setHasError(true);
@@ -35,7 +35,12 @@ function InstagramMedia() {
         ? <div>Loading Instagram feed...</div> 
         : hasError 
           ? <div>Error occured.</div> 
-          : null // mediaList.map(m => (<div key={m.id}></div>))
+          : mediaList.map(m => (
+            <div key={m.id}>
+              <img src={m.media_url} alt="" />
+              {m.caption}
+            </div>
+            ))
       }
     </>
   );
