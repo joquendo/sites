@@ -1,0 +1,9 @@
+.navbar {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    margin-bottom: 39px;
+  }
+}

@@ -7,6 +7,8 @@ import ProjectsPage from '../projects';
 import AboutPage from '../about';
 import PrivacyPage from '../privacy';
 
+import './navigation.css';
+
 const Navigation = () => {
   return (
     <Router>

@@ -29,7 +29,6 @@ class ProjectsPage extends Component {
     return (
       <section className="main">
         <div id="projects">
-          <h1 className="h3">Projects</h1>
           <div className="projects-list">
             <div className="row">
               {this.state.projects.map((project) => <Project key={project.id} project={project} />)}
