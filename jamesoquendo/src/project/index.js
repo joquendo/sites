@@ -18,7 +18,9 @@ const Project = (props) => {
             <small>Technology</small>
             <p className="card-text">{project.technology}</p>
           </div>
-          <a href={project.url} target="_blank" rel="noopener noreferrer" className="btn btn-outline-dark">Visit</a>
+          {project.url && (
+            <a href={project.url} target="_blank" rel="noopener noreferrer" className="btn btn-outline-dark">Visit</a>
+          )}
         </div>
       </div>
     </div>
