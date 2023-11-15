@@ -15,7 +15,7 @@ const Footer = () => {
       </div>
       <div className="social">
         <a href="https://www.linkedin.com/in/jamesoquendo/"><img src={LinkedInLogo} alt="My LinkedIn Profile"/></a>
-        <a href="https://www.github.com/joquendo/"><img src={GitHubLogo} alt="My Github Repository"/></a>
+        <a href="https://www.github.com/jamesoquendo/"><img src={GitHubLogo} alt="My Github Repository"/></a>
         <a href="https://www.instagram.com/mrbokchoy/"><img src={InstagramLogo} alt="My Instagram Profile"/></a>
       </div>
       <p className="copyright">&copy;2024 James Oquendo. All rights reserved. </p>
